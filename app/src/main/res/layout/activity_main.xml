@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginBottom="41dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="162dp"
+        android:alpha="1"
+        android:background="@drawable/emptyboard"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="114dp"
+            android:layout_height="114dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="0"
+            android:onClick="playTurn"
+            android:tag="0" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="114dp"
+            android:layout_height="114dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="0"
+            android:onClick="playTurn"
+            android:tag="1" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="114dp"
+            android:layout_height="114dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="0"
+            android:onClick="playTurn"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="114dp"
+            android:layout_height="114dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="0"
+            android:onClick="playTurn"
+            android:tag="3" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="114dp"
+            android:layout_height="114dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="0"
+            android:onClick="playTurn"
+            android:tag="4" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="114dp"
+            android:layout_height="114dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="0"
+            android:onClick="playTurn"
+            android:tag="5" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="114dp"
+            android:layout_height="114dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="0"
+            android:onClick="playTurn"
+            android:tag="6" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="114dp"
+            android:layout_height="114dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="0"
+            android:onClick="playTurn"
+            android:tag="7" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="114dp"
+            android:layout_height="114dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="0"
+            android:onClick="playTurn"
+            android:tag="8" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginStart="156dp"
+        android:text="New Game"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="playAgain"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="258dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        android:text="Play a game of TicTacToe! First to get 3 in a row wins!"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
